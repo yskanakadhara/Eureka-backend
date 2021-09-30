@@ -1,0 +1,24 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "root",
+    "database": "erpnextgeneration",
+    "synchronize": false,
+    "logging": true,
+    "entities": [
+        "dist/apiService/entity/*.js"
+    ],
+    "subscribers": [
+        "dist/apiService/subscriber/*.js"
+    ],
+    "migrations": [
+        "dist/apiService/migration/*.js"
+    ],
+    "cli": {
+        "entitiesDir": "dist/apiService/entity",
+        "migrationsDir": "dist/apiService/migration",
+        "subscribersDir": "dist/apiService/subscriber"
+    }
+}
